@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div id="instruct">
+        <h2>Here's what you do!</h2>
+        <br>
+        <ol>
+            <li>You will be given a random number to achieve at the start of the game titled: <span>Goal</span></li>
+            <li>There are four crystals</li>
+            <ul>
+                <li id="blue">Blue</li>
+                <li id="green">Green</li>
+                <li id="red">Red</li>
+                <li id="yellow">Yellow</li>
+            </ul>
+            <li>Clicking on the crystals will give you a random amount of points in your total score</li>
+            <li>You win the game if you total score is equal to the goal.</li>
+            <li>You will lose if your total score is greater than the goal.</li>
+            <li>You will not know the value of each crystal until you click on them to find out.</li>
+            <li>Every time a new game starts the value of each crystal and the goal will change.</li>
+        </ol>
+
+    </div>
+    <div id="goal">
+        <h3>Goal: <div id="ranNum"></div>
+        </h3>
+    </div>
+    <div id="windAndLosses">
+        <h3>Wins: <div id="wins"></div>
+        </h3>
+        <br>
+        <h3>Losses <div id="losses"></div>
+        </h3>
+    </div>
+
+    <div id="crystals">
+        <img src="assets/images/Blue-Crystal.png" class="crystalImage" id="bCrys" alt="Blue Crystal">
+        <img src="assets/images/Green-Crystal.png" class="crystalImage" id="rCrys" alt="Green crystal">
+        <img src="assets/images/Red-Crystal.png" class="crystalImage" id="gCrys" alt="Red Crystal">
+        <img src="assets/images/Yellow-Crystal.png" class="crystalImage" id="yCrys" alt="Yellow Crystal">
+    </div>
+    <div id="userTotal">
+        <h2>Total score: <div id="total"></div>
+        </h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -32,7 +32,7 @@ $(document).ready(function () {
         var cry2 = Math.floor(Math.random() * 11 + 1);
         var cry3 = Math.floor(Math.random() * 11 + 1);
         var cry4 = Math.floor(Math.random() * 11 + 1);
-        userTotal = 0;
+        userSum = 0;
         $("#total").text(userTotal);
     }
     //On click for the jewels with the random number

@@ -16,12 +16,11 @@ $(document).ready(function () {
     console.log("cry4 is: " + cry4);
 
     //Global variables
-    var userTotal = 0;
     var wins = 0;
     var losses = 0;
     var userSum = 0;
 
-    $("#total").text(combined);
+    $("#total").text(userSum);
     $("#wins").text(wins);
     $("#losses").text(losses);
 
@@ -37,53 +36,50 @@ $(document).ready(function () {
         $("#total").text(userTotal);
     }
     //On click for the jewels with the random number
-    function combined() {
-        
-        $("#bCrys").on("click", function () {
-            userSum = userTotal + cry1;
-            console.log("Total1= " + userTotal);
-            $("#total").text(userSum);
+    $("#bCrys").on("click", function () {
+        userSum = userSum + cry1;
+        console.log("Total1= " + userSum);
+        $("#total").text(userSum);
 
-            if (userSum === ran) {
-                win();
-            } else if (userSum > ran) {
-                lose();
-            }
-        });
-        $("#gCrys").on("click", function () {
-            userSum = userTotal + cry2;
-            console.log("Total2= " + userSum);
-            $("#total").text(userSum);
+        if (userSum === ran) {
+            win();
+        } else if (userSum > ran) {
+            lose();
+        }
+    });
+    $("#gCrys").on("click", function () {
+        userSum = userSum + cry2;
+        console.log("Total2= " + userSum);
+        $("#total").text(userSum);
 
-            if (userSum === ran) {
-                win();
-            } else if (userSum > ran) {
-                lose();
-            }
-        });
-        $("#rCrys").on("click", function () {
-            userSum = userTotal + cry3;
-            console.log("Total3= " + userSum);
-            $("#total").text(userSum);
+        if (userSum === ran) {
+            win();
+        } else if (userSum > ran) {
+            lose();
+        }
+    });
+    $("#rCrys").on("click", function () {
+        userSum = userSum + cry3;
+        console.log("Total3= " + userSum);
+        $("#total").text(userSum);
 
-            if (userSum === ran) {
-                win();
-            } else if (userSum > ran) {
-                lose();
-            }
-        });
-        $("#yCrys").on("click", function () {
-            userSum = userTotal + cry4;
-            console.log("Total4= " + userSum);
-            $("#total").text(userSum);
+        if (userSum === ran) {
+            win();
+        } else if (userSum > ran) {
+            lose();
+        }
+    });
+    $("#yCrys").on("click", function () {
+        userSum = userSum + cry4;
+        console.log("Total4= " + userSum);
+        $("#total").text(userSum);
 
-            if (userSum === ran) {
-                win();
-            } else if (userSum > ran) {
-                lose();
-            }
-        });
-    };
+        if (userSum === ran) {
+            win();
+        } else if (userSum > ran) {
+            lose();
+        }
+    });
 
     function win() {
         wins++
